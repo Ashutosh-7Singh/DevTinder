@@ -1,20 +1,25 @@
 const express = require("express");
-const  app= express();
 
-app.use("/",(req,res)=>{
-    res.send("Namaste Dev Tinder")
+const app = express();
+
+app.get("/user", (req, res) => {
+    res.send({firstName:"Ashutosh" ,lastName:"Singh"});
+});
+app.post("/user",(req,res)=>{
+    console.log(req.body);
+    res.send("Data sucessfully saved to the database")
+    
+})
+
+app.delete("/user",(req,res)=>{
+    res.send("Deleted successfully");
 })
 
 app.use("/test",(req,res)=>{
-    res.send("Hai Moni this is test!");
-});
-
-app.use("/hello", (req,res)=>{
-    res.send("this is Heloo Moni")
+    res.send("Data tested sucessfully");
 })
 
-
-app.listen(9632, ()=>{
-    console.log("Sercer is Successfully runnig on prot 9632");
+app.listen(7777,()=>{
+    console.log("Succesfully running on the 7777 port");
     
-});
+})

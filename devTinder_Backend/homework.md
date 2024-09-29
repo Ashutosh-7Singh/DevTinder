@@ -10,3 +10,13 @@
 * What is the diff between "^ & ~"
 * what is the use "-g"
 
+
+
+EPISOE-04 HW
+* .gitignore
+* Create a remote repo on github
+* Push all code to remote origin 
+* Play with routes and route extension ex. /hello,/,/hello/2 etc
+* Order of the routes matter a lot baby
+* Install Postman app and make a workspace/collection and test API 
+* Write logic to handle GET,POST,PATHC DELETE API's Calls and test them on Postman
