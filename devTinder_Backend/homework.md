@@ -20,3 +20,5 @@ EPISOE-04 HW
 * Order of the routes matter a lot baby
 * Install Postman app and make a workspace/collection and test API 
 * Write logic to handle GET,POST,PATHC DELETE API's Calls and test them on Postman
+* Explore routnig and use of ?,*,(), in the routes 
+* Use of regex in routes /a/,/.2abc
