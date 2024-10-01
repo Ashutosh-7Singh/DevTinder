@@ -22,3 +22,5 @@ EPISOE-04 HW
 * Write logic to handle GET,POST,PATHC DELETE API's Calls and test them on Postman
 * Explore routnig and use of ?,*,(), in the routes 
 * Use of regex in routes /a/,/.2abc
+
+EPISODE-05|Middlewares  & Error Handlers
