@@ -48,7 +48,7 @@
 
 const express = require("express")
 const app= express();
-
+/*
 app.get("/user",(req,res,next)=>{
     console.log("Handling route user 1 !!")
     res.send("Route handler 1");
@@ -57,7 +57,18 @@ app.get("/user",(req,res,next)=>{
 app.get("/user",(req,res)=>{
     console.log("Handling route 2 !!")
     res.send("RouteHandler 2")
+})*/
+
+app.get("/user",(req,res)=>{
+    console.log("Handling route 2 !!")
+    res.send("RouteHandler 2")
 })
+app.get("/user",(req,res,next)=>{
+    console.log("Handling route user 1 !!")
+    // res.send("Route handler 1");
+    next();
+})
+// reponse RouteHandler 2
 
 app.listen(7777,()=>{
     console.log("Successfullt listnenig on port 7777.........");
