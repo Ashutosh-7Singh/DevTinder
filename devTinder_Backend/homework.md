@@ -24,3 +24,6 @@ EPISOE-04 HW
 * Use of regex in routes /a/,/.2abc
 
 EPISODE-05|Middlewares  & Error Handlers
+
+* read what is middleware and how express handle request behind the sciene
+

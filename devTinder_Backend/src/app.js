@@ -1,6 +1,6 @@
 // const express = require("express");
 // const app = express();
-// //  we can do like this 
+// //  we can do like this
 // app.use("/user", (req, res, next) => {
 //   console.log("Handling the route user1!!");
 //   //   res.send("Route Handler 1!");
@@ -18,8 +18,7 @@
 
 // );
 
-
-// // or we can all in one array also we can put any two in one array 
+// // or we can all in one array also we can put any two in one array
 
 // app.use("/user",
 //     [ (req, res, next) => {
@@ -38,39 +37,62 @@
 //   }
 // ]
 //   );
-  
 
 // app.listen(7777, () => {
 //   console.log("Server is listning on port 777..... ");
 // });
 
+// const express = require("express")
+// const app= express();
+// /*
+// app.get("/user",(req,res,next)=>{
+//     console.log("Handling route user 1 !!")
+//     res.send("Route handler 1");
+// })
+
+// app.get("/user",(req,res)=>{
+//     console.log("Handling route 2 !!")
+//     res.send("RouteHandler 2")
+// })*/
+
+// /*
+// app.get("/user",(req,res)=>{
+//     console.log("Handling route 2 !!")
+//     res.send("RouteHandler 2")
+// })
+// app.get("/user",(req,res,next)=>{
+//     console.log("Handling route user 1 !!")
+//     // res.send("Route handler 1");
+//     next();
+// })
+// // reponse RouteHandler 2
+// */
+
+// app.get("/user",(req,res,next)=>{
+//     console.log("Handling route 2 !!")
+//     // res.send("RouteHandler 2")
+//     next();
+// })
+// app.get("/user",(req,res,next)=>{
+//     console.log("Handling route user 1 !!")
+//     // res.send("Route handler 1");
+//     next();
+// })
+// // reponse ->cannot get user in porstman meand error in route
+
+// app.listen(7777,()=>{
+//     console.log("Successfullt listnenig on port 7777.........");
+
+// })
 
 
-const express = require("express")
-const app= express();
-/*
-app.get("/user",(req,res,next)=>{
-    console.log("Handling route user 1 !!")
-    res.send("Route handler 1");
-})
+const express = require("express");
+const app = express();
 
-app.get("/user",(req,res)=>{
-    console.log("Handling route 2 !!")
-    res.send("RouteHandler 2")
-})*/
-
-app.get("/user",(req,res)=>{
-    console.log("Handling route 2 !!")
-    res.send("RouteHandler 2")
-})
-app.get("/user",(req,res,next)=>{
-    console.log("Handling route user 1 !!")
-    // res.send("Route handler 1");
+app.use("/",(req,res,next)=>{
+    res.send("this is route handler 1")
     next();
 })
-// reponse RouteHandler 2
-
 app.listen(7777,()=>{
-    console.log("Successfullt listnenig on port 7777.........");
-    
+    console.log("Successfully listening on port 777..........")
 })
