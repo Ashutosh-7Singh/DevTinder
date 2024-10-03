@@ -86,13 +86,59 @@
 // })
 
 
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
 
-app.use("/",(req,res,next)=>{
-    res.send("this is route handler 1")
-    next();
-})
-app.listen(7777,()=>{
-    console.log("Successfully listening on port 777..........")
-})
+// app.use("/",(req,res,next)=>{
+//     res.send("this is route handler 1")
+//     next();
+// })
+// app.listen(7777,()=>{
+//     console.log("Successfully listening on port 777..........")
+// })
+
+
+
+// Middle ware concept 
+
+// const express = require("express");
+// const app=express();
+
+// app.get("/admin/getAllData",(req,res)=>{
+//     // logic for get all data
+//     res.send("Get All DATA")
+// })
+
+// app.listen(7777,()=>{
+//     console.log("Successfully runnig on srver 7777.............");
+    
+// })
+
+// proper middler ware for authorization 
+
+ const express = require("express");
+ const app=express();
+
+ app.use("/admin",(req,res,next)=>{
+    console.log("Admin auth is getting checked ");
+    const token = "xyz";
+    const isAdminAuthorizedToken = token === "xyz";
+    if(!isAdminAuthorizedToken){
+      res.status(401).send("Unautorised request");
+    
+    }else{
+      next();
+    }
+    
+ })
+
+ app.get("/admin/getAllData",(req,res)=>{
+   res.send("All Data Sent");
+ })
+ app.get("/admin/deleteUser",(req,res)=>{
+   res.send("Deleted User");
+ });
+ app.listen(7777,()=>{
+   console.log("Sucessfullyt running on 7777");
+   
+ })
