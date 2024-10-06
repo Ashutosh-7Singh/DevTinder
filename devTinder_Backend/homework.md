@@ -27,3 +27,4 @@ EPISODE-05|Middlewares  & Error Handlers
 
 * read what is middleware and how express handle request behind the sciene
 * learn difference bwtenn app.use and app.all 
+* Error handling app.use("/" ,(err,req,res,next)=>{});
