@@ -28,3 +28,14 @@ EPISODE-05|Middlewares  & Error Handlers
 * read what is middleware and how express handle request behind the sciene
 * learn difference bwtenn app.use and app.all 
 * Error handling app.use("/" ,(err,req,res,next)=>{});
+
+
+Eposide-06 
+* Createa a free cluster on MongoDB official website (Mongo Atlas)
+* install mongoose library 
+* Connect your application to the Database "Connection-url"/devtinder
+* Call the connectDb function  and connect of database before starting application on 7777
+* Create a user Schema
+* Create POST/signup API to add data to database
+* Push some documents using APis's call from postman
+* ErrorHandling using try and catch 
