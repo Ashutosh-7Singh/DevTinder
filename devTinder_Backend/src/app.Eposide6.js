@@ -4,22 +4,20 @@ const app = express();
 const User = require("./modals/user.js");
 
 app.post("/signup", async (req, res) => {
-  console.log(req);
+  const user = new User({
+    firstName: "Moni",
+    lastName: "Singh",
+    emailId: "moni@gmail.com",
+    password: ",moni@1234",
+    age: 130,
+  });
 
-  //   const user=new User({
-  //     firstName:"Moni",
-  //     lastName:"Singh",
-  //     emailId:"moni@gmail.com",
-  //     password:",moni@1234",
-  //     age:130
-  //   });
-
-  //    try {
-  //     await user.save();
-  //     res.send("User Added Succcessfully !!");
-  //   } catch (err) {
-  //     res.status(400).send("Error savng the user:" + err.send);
-  //   }
+  try {
+    await user.save();
+    res.send("User Added Succcessfully !!");
+  } catch (err) {
+    res.status(400).send("Error savng the user:" + err.send);
+  }
 });
 connectDB()
   .then(() => {
