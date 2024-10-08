@@ -39,3 +39,17 @@ Eposide-06
 * Create POST/signup API to add data to database
 * Push some documents using APis's call from postman
 * ErrorHandling using try and catch 
+
+Eposide-07
+* JS object vs JSON(difference)
+* Add the express.json middleware to your app
+* Make your signup API dynamic to recieve data from end user 
+* User.findOne with dublicate emailId,which oject returned
+* API-Get user by email 
+* API & Feed API+GET?feed -get all the users formt he database 
+* Createa a delete user API
+* Difference between patch and put 
+* API - Update  a user
+* Explore the Mongoose Documentation for Model method
+* What are option in a Model.findOneAndUpdate method,explore more about it 
+* API -Update the user with email ID
