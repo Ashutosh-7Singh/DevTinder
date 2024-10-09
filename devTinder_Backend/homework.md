@@ -53,3 +53,11 @@ Eposide-07
 * Explore the Mongoose Documentation for Model method
 * What are option in a Model.findOneAndUpdate method,explore more about it 
 * API -Update the user with email ID
+
+Eposide-08 
+* Explore schema type option form the documentaion 
+* add requires,uniques,lowecase,min,max,trim
+* add default
+* create a custom validate function for gender
+* over all imporve the database schema 
+* put appropriate validation in each fileds
