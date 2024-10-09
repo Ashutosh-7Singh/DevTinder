@@ -37,8 +37,6 @@ app.get("/feed",async(req,res)=>{
   const users= await User.find({});
   res.send(users)
 })
-
-
 connectDB()
   .then(() => {
     console.log("Database connection Eatablished");
