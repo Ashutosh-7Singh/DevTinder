@@ -61,3 +61,10 @@ Eposide-08
 * create a custom validate function for gender
 * over all imporve the database schema 
 * put appropriate validation in each fileds
+* add timestamps to the schema 
+* add api level validation on patch  request & signUp api 
+* DATA Sanitization - Add api validation fro each fields
+* Install validator 
+* Explore  validator library function and use validator function for  password,photo and url 
+* Never trust req.body so always validate and sanitize your code ok
+
